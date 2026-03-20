@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edilmar Flores — WordPress & Elementor Designer from Iloilo City, Philippines. 3+ years building fast, SEO-optimized websites that help businesses grow online.">
+    <meta name="keywords" content="WordPress Designer Philippines, Elementor Developer, Freelance Web Designer Iloilo, SEO Optimization, WordPress Elementor Expert">
+    <meta name="author" content="Edilmar Flores">
+    <meta property="og:title" content="Edilmar Flores | WordPress & Elementor Designer">
+    <meta property="og:description" content="I build WordPress websites that look sharp, load fast, and rank well. Let's grow your business online.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://edilmarwpdeveloper.42web.io/">
+    <title>Edilmar Flores | WordPress & Elementor Designer · Iloilo City</title>
+
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <div class="animated-background">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#home" class="logo">
+                    <span class="logo-text">Edilmar</span>
+                    <span class="logo-dot">.</span>
+                </a>
+                <nav class="nav" id="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home"       class="nav-link active">Home</a></li>
+                        <li><a href="#about"      class="nav-link">About</a></li>
+                        <li><a href="#skills"     class="nav-link">Skills</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#projects"   class="nav-link">Projects</a></li>
+                        <li><a href="#contact"    class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-sun sun-icon"></i>
+                        <i class="fas fa-moon moon-icon"></i>
+                    </button>
+                    <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <!-- <i class="fas fa-circle pulse"></i> -->
+                        <span>Open to new projects — est. 2–3 week turnaround</span>
+                    </div>
+
+                    <!-- <div class="availability-status">
+                        <i class="fas fa-circle pulse"></i>
+                        <span>Open to new projects — est. 2–3 week turnaround</span>
+                    </div> -->
+
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Edilmar Flores</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-text"></span>
+                    </h2>
+                    <p class="hero-description">
+                        I build fast, conversion-ready WordPress websites — from first concept to full launch.
+                        3+ years delivering real projects across healthcare, travel, e-commerce, and corporate niches.
+                    </p>
+                    <div class="hero-location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Iloilo City, Philippines · Works with clients worldwide</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Start a Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="Edilmar_Flores_Resume.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.facebook.com/profile.php?id=61578698037805" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/edilmar-flores-2748893b8/?skipRedirect=true" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link" aria-label="Upwork"><i class="fas fa-briefcase"></i></a> -->
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left">
+                    <div class="profile-wrapper">
+                        <div class="profile-border"></div>
+                        <div class="profile-glow"></div>
+                        <img src="profile.jpg" alt="Edilmar Flores — WordPress & Elementor Designer" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"><div class="wheel"></div></div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="lead">
+                        I don't just build websites — I build online presences that help businesses
+                        get found, look credible, and turn visitors into customers.
+                    </p>
+                    <p>
+                        With over <strong>3 years of project-based experience</strong> building responsive,
+                        SEO-optimized WordPress websites, combined with <strong>3+ years in technical support
+                        and client communication</strong> within a fast-paced BPO environment, I bring a rare
+                        mix of design skill, technical depth, and people-first thinking to every project.
+                    </p>
+                    <p>
+                        I handle the full project lifecycle — from discovery call to launch and beyond.
+                        That means one reliable point of contact who understands both the design
+                        and the business goals behind it.
+                    </p>
+                    <p>
+                        Currently in my 4th year of a <strong>BS in Information Technology</strong> at
+                        Iloilo State University, graduating 2026 — keeping my skills constantly sharpened
+                        with the latest in web and software development.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">3+</div>
+                            <div class="stat-label">Years Freelancing</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Satisfied Clients</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-features" data-aos="fade-left">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-palette"></i></div>
+                        <div>
+                            <h3>Design That Converts</h3>
+                            <p>Visually sharp sites built around your brand goals — not generic templates</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+                        <div>
+                            <h3>Performance & SEO First</h3>
+                            <p>Every site I build is optimized for speed and search rankings from day one</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                        <div>
+                            <h3>Clear Communication</h3>
+                            <p>Trained in high-volume support — you'll always know where your project stands</p>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h3>Post-Launch Support</h3>
+                            <p>I don't disappear after delivery — maintenance and updates are part of the deal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I work with</span>
+                <h2 class="section-title">Skills & Tools</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                    <h3>WordPress & Elementor</h3>
+                    <p>Custom page building, theme customization, plugin integration, and full-site development using Elementor Pro</p>
+                    <div class="skill-tags">
+                        <span class="tag">Elementor Pro</span>
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">ACF</span>
+                        <span class="tag">WPML</span>
+                        <span class="tag">Astra</span>
+                        <span class="tag">OceanWP</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                    <h3>HTML, CSS & JavaScript</h3>
+                    <p>Custom widgets, CSS overrides, responsive layouts, and lightweight scripting to extend Elementor's capabilities</p>
+                    <div class="skill-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Custom CSS</span>
+                        <span class="tag">JS Basics</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-icon"><i class="fas fa-search"></i></div>
+                    <h3>SEO & Analytics</h3>
+                    <p>On-page optimization, keyword research, plugin setup, and monthly performance reporting using real data</p>
+                    <div class="skill-tags">
+                        <span class="tag">Yoast SEO</span>
+                        <span class="tag">RankMath</span>
+                        <span class="tag">Google Analytics 4</span>
+                        <span class="tag">Search Console</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-icon"><i class="fas fa-server"></i></div>
+                    <h3>Hosting & Migration</h3>
+                    <p>cPanel management, DNS configuration, staging environments, and zero-downtime migrations between hosts</p>
+                    <div class="skill-tags">
+                        <span class="tag">cPanel</span>
+                        <span class="tag">Cloudflare</span>
+                        <span class="tag">Namecheap</span>
+                        <span class="tag">All-in-One WP</span>
+                        <span class="tag">Duplicator</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-icon"><i class="fas fa-tachometer-alt"></i></div>
+                    <h3>Performance & Speed</h3>
+                    <p>Core Web Vitals optimization, image compression, caching, and CDN setup for fast-loading sites that retain visitors</p>
+                    <div class="skill-tags">
+                        <span class="tag">WP Rocket</span>
+                        <span class="tag">LiteSpeed Cache</span>
+                        <span class="tag">Smush</span>
+                        <span class="tag">GTmetrix</span>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="skill-icon"><i class="fas fa-pen-fancy"></i></div>
+                    <h3>Content & Copywriting</h3>
+                    <p>Web copy, blog posts, and social media content written to rank in search and resonate with real audiences</p>
+                    <div class="skill-tags">
+                        <span class="tag">Blog Writing</span>
+                        <span class="tag">Web Copywriting</span>
+                        <span class="tag">Social Media</span>
+                        <span class="tag">Canva</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My journey</span>
+                <h2 class="section-title">Work Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 – Present</div>
+                    <div class="timeline-content">
+                        <h3>Freelance WordPress & Elementor Designer</h3>
+                        <p class="timeline-company">Self-employed · Project-based · 3+ years</p>
+                        <ul class="timeline-list">
+                            <li>Designed and launched 50+ responsive WordPress websites across healthcare, travel, e-commerce, and corporate niches</li>
+                            <li>Implemented on-page SEO strategies that increased organic traffic by an average of 40% within 3 months post-launch</li>
+                            <li>Managed the full project lifecycle solo — from discovery call and wireframing to launch, client handoff, and ongoing maintenance</li>
+                            <li>Built WooCommerce and POS-integrated e-commerce stores, including inventory, payment gateway, and order management setup</li>
+                            <li>Executed zero-downtime host migrations and DNS configurations for clients switching providers</li>
+                            <li>Delivered monthly GA4 and Search Console performance reports with clear, actionable insights for clients</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019 – 2022</div>
+                    <div class="timeline-content">
+                        <h3>Customer & Technical Support Representative</h3>
+                        <p class="timeline-company">BPO / Outsourcing Company · Full-time · 3+ years</p>
+                        <ul class="timeline-list">
+                            <li>Supported 100+ international clients daily on website, hosting, and domain-related technical issues</li>
+                            <li>Maintained a 95%+ customer satisfaction score in a high-volume, deadline-driven support environment</li>
+                            <li>Documented and escalated complex technical issues; collaborated cross-functionally with backend and development teams</li>
+                            <li>Trained and onboarded new team members on technical support workflows and escalation best practices</li>
+                            <li>Developed strong client communication, active listening, and expectation-management skills under pressure</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What I offer</span>
+                <h2 class="section-title">Services</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>WordPress Web Design</h3>
+                    <p>Custom, brand-aligned websites built with Elementor Pro — from single landing pages to full multi-page builds tailored to your goals</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Website Maintenance</h3>
+                    <p>Ongoing plugin updates, security patches, uptime monitoring, and performance checks — monthly retainers available</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>SEO Optimization</h3>
+                    <p>Full on-page SEO audit, keyword research, meta and schema markup setup, and monthly reporting — so your site actually gets found</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon"><i class="fas fa-edit"></i></div>
+                    <h3>Content Creation</h3>
+                    <p>Blog posts, service page copy, and social media content written to rank in search and convert your target audience</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Site Migration</h3>
+                    <p>Host-to-host migrations with zero data loss, minimal downtime, and full DNS and email reconfiguration handled end-to-end</p>
+                </div>
+                <div class="service-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                    <h3>Analytics & Reporting</h3>
+                    <p>GA4 setup, Search Console integration, and monthly performance reports with plain-English takeaways and clear next steps</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">My work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <img src="project1.jpg" alt="Medical KPO — Corporate WordPress Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Medical KPO</h3>
+                                <p>Corporate site with custom Elementor layout, SEO setup, and contact form integration</p>
+                                <a href="https://medicalkpo.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">Elementor Pro</span><span class="tag">SEO</span><span class="tag">Healthcare</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <img src="project2.jpg" alt="Philippine Cornea Society — Medical Association Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Philippine Cornea Society</h3>
+                                <p>Medical society site with event management, member resources, and responsive design</p>
+                                <a href="https://philippinecornea.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">Events</span><span class="tag">Responsive</span><span class="tag">Medical</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <img src="project3.jpg" alt="Eternus Global — Business Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Eternus Global</h3>
+                                <p>Business portfolio with lightbox gallery, custom animations, and lead capture forms</p>
+                                <a href="https://eternusglobal.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">Portfolio</span><span class="tag">Gallery</span><span class="tag">Business</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <img src="project4.jpg" alt="EuraWest — SEO Blog Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>EuraWest</h3>
+                                <p>SEO-first blog on Astra theme — structured for content marketing and long-term rankings</p>
+                                <a href="https://eurawest.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">Astra Theme</span><span class="tag">SEO</span><span class="tag">Blog</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <img src="project5.jpg" alt="Explore in Spain — Travel Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Explore in Spain</h3>
+                                <p>Travel website with Elementor Pro — immersive layouts, custom CSS, and destination content</p>
+                                <a href="https://exploreinspain.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">Elementor Pro</span><span class="tag">Custom CSS</span><span class="tag">Travel</span>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <img src="project6.jpg" alt="Gebix Pharmacy — E-commerce and POS Website">
+                        <div class="project-overlay">
+                            <div class="project-info">
+                                <h3>Gebix Pharmacy</h3>
+                                <p>E-commerce site with WooCommerce, POS system integration, and events functionality</p>
+                                <a href="https://gebixpharmacy.com/" target="_blank" rel="noopener" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> View Live Site
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tags">
+                        <span class="tag">WordPress</span><span class="tag">WooCommerce</span><span class="tag">POS Integration</span><span class="tag">E-commerce</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What clients say</span>
+                <h2 class="section-title">Client Feedback</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>
+                        "Edilmar delivered our medical website on time and it looked exactly how we envisioned it.
+                        Clean, professional, and loads fast on mobile. Will definitely hire again."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">MK</div>
+                        <div class="testimonial-meta">
+                            <strong>M. Kowalski</strong>
+                            <span>Owner — Medical KPO</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>
+                        "Traffic to our blog doubled within two months after Edilmar overhauled our SEO
+                        and cleaned up the site structure. A reliable professional who knows his craft."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">JR</div>
+                        <div class="testimonial-meta">
+                            <strong>J. Rodriguez</strong>
+                            <span>Editor — EuraWest</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <blockquote>
+                        "Great communicator, patient with revisions, and genuinely understands what a small
+                        business needs. Everything was delivered on time and within budget."
+                    </blockquote>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">AG</div>
+                        <div class="testimonial-meta">
+                            <strong>A. Garcia</strong>
+                            <span>Founder — Explore in Spain</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section education">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Academic background</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+            <div class="education-card" data-aos="zoom-in">
+                <div class="education-icon"><i class="fas fa-graduation-cap"></i></div>
+                <div class="education-content">
+                    <h3>Bachelor of Science in Information Technology</h3>
+                    <p class="education-school">Iloilo State University of Fisheries Science and Technology</p>
+                    <p class="education-year">2022 – 2026 · 4th Year Student · Graduating 2026</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Let's connect</span>
+                <h2 class="section-title">Start a Project</h2>
+                <p class="section-description">
+                    Have a project in mind? I'd love to hear about it.
+                    I typically respond within 24 hours — let's see what we can build together.
+                </p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:edilmarwpdev@gmail.com">edilmarwpdev@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone / WhatsApp</h4>
+                            <a href="tel:+639077264927">+63 907 726 4927</a>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Iloilo City, Philippines (UTC+8)</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon"><i class="fas fa-globe"></i></div>
+                        <div class="info-content">
+                            <h4>Live Portfolio</h4>
+                            <a href="https://edilmarwpdeveloper.42web.io/" target="_blank" rel="noopener">edilmarwpdeveloper.42web.io</a>
+                        </div>
+                    </div>
+                    <div class="availability-status">
+                        <i class="fas fa-circle pulse"></i>
+                        <span>Available for new projects — est. 2–3 week delivery</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-aos="fade-left"
+                      action="https://formsubmit.co/edilmarwpdev@gmail.com" method="POST">
+                    <input type="hidden" name="_next"     value="thank-you.html">
+                    <input type="hidden" name="_captcha"  value="true">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject"  value="New project inquiry from your portfolio">
+
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" placeholder=" " required autocomplete="name">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" placeholder=" " required autocomplete="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group form-group--select">
+                        <select name="service" id="service">
+                            <option value="" disabled selected></option>
+                            <option value="WordPress Web Design">WordPress Web Design</option>
+                            <option value="Website Maintenance">Website Maintenance</option>
+                            <option value="SEO Optimization">SEO Optimization</option>
+                            <option value="Content Creation">Content Creation</option>
+                            <option value="Site Migration">Site Migration</option>
+                            <option value="Analytics & Reporting">Analytics & Reporting</option>
+                            <option value="Other / Not sure yet">Other / Not sure yet</option>
+                        </select>
+                        <label for="service">Service Needed</label>
+                        <i class="fas fa-chevron-down select-arrow"></i>
+                    </div>
+                    <div class="form-group form-group--select">
+                        <select name="budget" id="budget">
+                            <option value="" disabled selected></option>
+                            <option value="Under $300">Under $300</option>
+                            <option value="$300–$800">$300 – $800</option>
+                            <option value="$800–$2,000">$800 – $2,000</option>
+                            <option value="$2,000+">$2,000+</option>
+                            <option value="Let's discuss">Let's discuss</option>
+                        </select>
+                        <label for="budget">Estimated Budget (USD)</label>
+                        <i class="fas fa-chevron-down select-arrow"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="5" placeholder=" " required></textarea>
+                        <label for="message">Tell me about your project</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                    <div id="formMessage" class="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Edilmar</span>
+                        <span class="logo-dot">.</span>
+                    </a>
+                    <p>WordPress & Elementor Designer based in Iloilo City, Philippines.</p>
+                    <p>Building digital experiences that help businesses grow online.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61578698037805" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/in/edilmar-flores-2748893b8/?skipRedirect=true" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Upwork"><i class="fas fa-briefcase"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Edilmar Flores. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
